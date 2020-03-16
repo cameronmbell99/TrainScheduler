@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Train Schedules</h1>
+            <h3>Choo Choo</h3>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Current Train Schedule
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush" id="trainList">
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+                <p>Train Name</p>
+                <input type="text" id="trainName">
+                <p>Destination</p>
+                <input type="text" id="destination">
+                <p>First Train Time (HH:mm Military Time)</p>
+                <input type="text" id="time">
+                <p>Frequency (mins)</p>
+                <input type="text" id="frequency">
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>

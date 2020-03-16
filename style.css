@@ -1,0 +1,20 @@
+input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+.card-header {
+    background-color: rgb(16, 106, 190);
+    color: white;
+}
+
+.card {
+    border: 2px solid rgb(16, 106, 190);
+}
+
+.jumbotron {
+    background-color: rgb(16, 106, 190);
+    color: white;
+    text-align: center;
+}
