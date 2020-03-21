@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="jumbotron">
             <h1>Train Schedules</h1>
-            <h3>Choo Choo</h3>
+            <h3>All Aboard!</h3>
         </div>
         <div class="card">
             <div class="card-header">
                 Current Train Schedule
             </div>
             <div class="card-body">
-                <ul class="list-group list-group-flush" id="trainList">
+                <table class="table table-sm table-hover" id="train-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Train Time</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Time Until Arrival</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
                 </ul>
             </div>
         </div>
@@ -32,13 +47,14 @@
             </div>
             <div class="card-body">
                 <p>Train Name</p>
-                <input type="text" id="trainName">
+                <input type="text" placeholder="Thomas The Tank Engine" id="trainName">
                 <p>Destination</p>
-                <input type="text" id="destination">
-                <p>First Train Time (HH:mm Military Time)</p>
-                <input type="text" id="time">
-                <p>Frequency (mins)</p>
-                <input type="text" id="frequency">
+                <input type="text" placeholder="Chicago" id="destination">
+                <p>First Train Time</p>
+                <input type="text" placeholder="Military Time" id="time">
+                <p>Frequency</p>
+                <input type="text" placeholder="minutes" id="frequency">
+                <button class="btn btn-primary" id="submitButton">Submit</button>
             </div>
         </div>
 
